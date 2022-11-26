@@ -1,0 +1,352 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+}
+ /* Header Section Start */
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+}
+#nav .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 5px 20px;
+    background-color: rgb(127, 127, 217);
+    padding: 5px 5px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#nav .logo:hover{
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}
+#nav .logo img{
+   height: 40px;
+   background-color: black;
+   border-radius: 30px;
+   background-size: cover;
+   transition: 0.5s;
+}
+#nav .logo img:hover{
+    background-color: white;
+}
+#nav .logo h1{
+    margin: 0px 10px;
+}
+.navbar ul li{
+   display: inline-block;
+   background-color: rgb(127, 127, 217);
+   height: 40px;
+   padding: 5px;
+  transition: 0.5s;
+  border-radius: 20px; 
+}
+.navbar ul li:hover{
+    transform: scale(1.02);
+    background-color: crimson;
+    
+    
+}
+.navbar ul li a:hover{
+    color: white;
+}
+.navbar ul li a{
+    font-size: 2rem;
+    padding: 0 40px;
+    color: black;
+   transition: 0.5s;
+}
+.btn button{
+    font-size: 2rem;
+   margin-right: 20px;
+   background-color: rgb(127, 127, 217);
+   height: 40px;
+   padding: 0px 20px;
+   border: none;
+   border-radius: 20px;
+   transition: 0.5s;
+   
+}
+.btn button:hover{
+    transform: scale(1.02);
+    background-color: crimson;
+    color: white;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Header Section End */
+
+
+/* BackGround Section  Start  */
+#bg{
+    background-image:url(./image/pexels-asad-photo-maldives-3601422.jpg) ;
+    background-size: cover;
+    object-fit: cover;
+    background-position:  center;
+    position: relative; 
+    z-index: 1;
+}
+
+#bg h1{
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color:transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1.5s;
+}
+#bg h1:nth-child(1){
+ animation-delay: 1.5s;
+}
+#bg h1:nth-child(2){
+    animation-delay: 2.5s;
+}
+#bg h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+    border-radius: 20px;
+}
+#bg h1:nth-child(1) span{
+    animation-delay: 1s;
+}
+#bg h1:nth-child(2) span{
+    animation-delay: 2s;
+}
+#bg .cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 30px;
+    transition: .3s ease;
+    border-radius: 10px;
+}
+#bg .cta:hover{
+    background-color: crimson;
+    color: white;
+}
+/* BackGround Section  End  */
+
+/* Country Section Start  */
+
+#country .card{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+ .title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.title span{
+    color: crimson;
+}
+ .heading{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+
+#country .bottom{
+    display: flex;
+    justify-content: center;
+   flex-wrap: wrap;
+}
+#country .bottom {
+    max-width: 960px;
+    margin: 30px auto 0px auto;
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    gap: 1rem;
+    text-align: center;
+}
+.box{
+    border-radius: 10px;
+    transition: 0.3s;
+    padding: 5px 5px;
+}
+.box:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 20px black;
+}
+.box h2{
+    font-size: 3rem;
+    padding-bottom: 5px;
+}
+.box h2 span{
+    color: crimson;
+    font-size: 3rem;
+}
+.box span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.box h3{
+    text-align: justify;
+    padding: 5px 20px;   
+}
+.box .box-img {
+    width: 100%;
+    height: 300px;
+}
+
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Footer Section Start */
+.footer-container{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+.brand{
+  margin-top: 20px;
+}
+.brand h1{
+    font-size: 3rem;
+    color: black;
+}
+.brand h1 span{
+    color: crimson;
+}
+.brand h2{
+    color: black;
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: .1rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#footer .social-icon{
+    display: flex;
+    margin-bottom: 30px;
+}
+#footer .social-icon .social-item{
+    margin-bottom: 10px;
+   
+}
+.social-item img{
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+.social-item img:hover{
+    filter: grayscale(0);
+}
+.brand p{
+    color: white;
+    font-size: 1.8rem;
+}
+/* Footer Section End  */
+
+
+/* KeyFrame Section Strat  */
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes text_reveal{
+    100%{
+        color: white;
+    }
+}
+/* KeyFrame Section End  */
+
+
+/* MEDIA SECTION START  */
+@media (max-width:880px) {
+  .navbar ul li{
+    display: none;
+  }
+  .navbar ul li a{
+    font-size: 1.8rem;
+  }
+   ul li a{
+    font-size: 1.2rem;
+   }
+   .logo{
+    width: 100%;
+    text-align: center;
+   }
+   #nav .logo{
+    justify-content: center;
+   }
+   .btn button{
+     width: 200px;
+   }
+}
+
+@media (max-width:650px){
+    #bg h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width:475px) {
+    .btn button{
+        width: 150px;
+      }
+}
+@media (max-width:450px) {
+  #bg , #country,#footer{
+    width: 449px;
+  }
+  .box .box-img {
+    height: 200px;
+  }
+}
